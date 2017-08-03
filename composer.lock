@@ -4,8 +4,65 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "13494a9b9a2a461b6be60be12a4db099",
+    "content-hash": "3383e1fb0d19cb98b43f7d93b056f2c0",
     "packages": [
+        {
+            "name": "cakephp/chronos",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cakephp/chronos.git",
+                "reference": "0621b191334d8dcb56907688986dd24eb8c38234"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cakephp/chronos/zipball/0621b191334d8dcb56907688986dd24eb8c38234",
+                "reference": "0621b191334d8dcb56907688986dd24eb8c38234",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "athletic/athletic": "~0.1",
+                "cakephp/cakephp-codesniffer": "~2.3",
+                "phpbench/phpbench": "@dev",
+                "phpstan/phpstan": "^0.6.4",
+                "phpunit/phpunit": "<6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cake\\Chronos\\": "src"
+                },
+                "files": [
+                    "src/carbon_compat.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Nesbitt",
+                    "email": "brian@nesbot.com",
+                    "homepage": "http://nesbot.com"
+                },
+                {
+                    "name": "The CakePHP Team",
+                    "homepage": "http://cakephp.org"
+                }
+            ],
+            "description": "A simple API extension for DateTime.",
+            "homepage": "http://cakephp.org",
+            "keywords": [
+                "date",
+                "datetime",
+                "time"
+            ],
+            "time": "2017-04-27T01:27:49+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -363,6 +420,69 @@
                 "laravel"
             ],
             "time": "2017-07-19T19:26:19+00:00"
+        },
+        {
+            "name": "laravel/horizon",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/horizon.git",
+                "reference": "1ab87ed3986bf3094ac38d64206f4d5db5393e8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/horizon/zipball/1ab87ed3986bf3094ac38d64206f4d5db5393e8d",
+                "reference": "1ab87ed3986bf3094ac38d64206f4d5db5393e8d",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/chronos": "^1.0",
+                "illuminate/contracts": "~5.4",
+                "illuminate/queue": "~5.4",
+                "illuminate/support": "~5.4",
+                "php": ">=7.1.0",
+                "predis/predis": "^1.1",
+                "ramsey/uuid": "^3.5",
+                "symfony/debug": "~3.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "orchestra/database": "~3.4",
+                "orchestra/testbench": "~3.4",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Horizon\\HorizonServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Horizon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Dashboard and code-driven configuration for Laravel queues.",
+            "keywords": [
+                "laravel",
+                "queue"
+            ],
+            "time": "2017-07-26T13:47:32+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -785,6 +905,56 @@
             "time": "2017-03-13T16:27:32+00:00"
         },
         {
+            "name": "predis/predis",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-06-16T16:22:20+00:00"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.2",
             "source": {
@@ -987,35 +1157,36 @@
             "time": "2017-03-26T20:37:53+00:00"
         },
         {
-            "name": "sailfish/module-installer",
-            "version": "v1.0.0",
+            "name": "studio/laravel-totem",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/codestudiollc/sailfish-module-installer.git",
-                "reference": "6ef80e87dad4ed418e45ea681db101f3e2571001"
+                "url": "https://github.com/codestudiollc/laravel-totem.git",
+                "reference": "1e4d4b6efb6efc041ace15740bf8cb04a94541c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codestudiollc/sailfish-module-installer/zipball/6ef80e87dad4ed418e45ea681db101f3e2571001",
-                "reference": "6ef80e87dad4ed418e45ea681db101f3e2571001",
+                "url": "https://api.github.com/repos/codestudiollc/laravel-totem/zipball/1e4d4b6efb6efc041ace15740bf8cb04a94541c4",
+                "reference": "1e4d4b6efb6efc041ace15740bf8cb04a94541c4",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.1"
+                "php": ">=5.6.4"
             },
             "require-dev": {
-                "composer/composer": "^1.4"
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~5.7"
             },
-            "type": "composer-plugin",
+            "type": "library",
             "extra": {
-                "class": "SailFish\\ModuleInstaller\\Plugin",
+                "component": "package",
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.0.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "SailFish\\ModuleInstaller\\": "src/"
+                    "Studio\\Totem\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1025,19 +1196,17 @@
             "authors": [
                 {
                     "name": "Roshan Gautam",
-                    "email": "roshan.gautam@hotmail.com",
-                    "homepage": "http://roshangautam.com"
+                    "email": "roshan.gautam@hotmail.com"
                 }
             ],
-            "description": "Install composer packages to a custom path (app/Modules) in a Sailfish Application",
+            "description": "A Laravel package to manage your cron jobs through a beautiful dashboard",
             "keywords": [
-                "Composer Installer",
-                "MDD",
-                "Module Driven Development",
-                "Sailfish",
-                "laravel"
+                "Code Studio",
+                "laravel",
+                "manager",
+                "scheduler"
             ],
-            "time": "2017-08-01T18:15:43+00:00"
+            "time": "2017-08-01 23:16:44"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3413,9 +3582,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "studio/laravel-totem": 20
+    },
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.6.4"

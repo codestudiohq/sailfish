@@ -7,8 +7,9 @@
     "require": {
         "php": ">=5.6.4",
         "laravel/framework": "5.4.*",
+        "laravel/horizon": "^0.1.0",
         "laravel/tinker": "~1.0",
-        "sailfish/module-installer": "^1.0"
+        "studio/laravel-totem": "^1.0@dev"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -49,5 +50,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
-    }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
 }
