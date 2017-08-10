@@ -177,9 +177,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Studio\Totem\Providers\TotemServiceProvider::class,
-        Studio\Totem\Providers\TotemRouteServiceProvider::class,
-
     ],
 
     /*
